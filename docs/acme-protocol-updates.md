@@ -10,6 +10,8 @@ lastmod: 2016-07-27
 
 The ACME protocol is the cornerstone of how Let's Encrypt works. It is currently a draft standard and not yet a finalized RFC. As the protocol specification evolves over time Let's Encrypt will implement updated versions of ACME. When doing so, security will be our primary concern, followed closely by backwards compatibility.
 
+ACME 프로토콜은 Let's Encrypt가 작동하는 방식의 기초입니다.
+
 # Currently Implemented ACME Version
 
 We currently have the following API endpoints. They do not implement any one fixed draft of the ACME specification as they evolved alongside the draft protocol document. Please see [our divergences documentation](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) to compare their implementation to the current ACME draft.
