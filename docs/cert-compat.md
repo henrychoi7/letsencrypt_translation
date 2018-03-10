@@ -8,13 +8,13 @@ lastmod: 2016-12-05
 
 {{< lastmod >}}
 
-Let's Encrypt aims to be compatible with as much software as possible without compromising security. The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform includes IdenTrust's DST Root X3 certificate in its trust store. A secondary factor is whether the platform supports modern [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) certificates, since all Let's Encrypt certificates use SHA-2.
+Let's Encrypt는 보안을 손상시키지 않으면서 최대한 많은 소프트웨어와 호환되는 것을 목표로 합니다. 특정 플랫폼에서 Let's Encrypt 인증서의 유효성을 검사 할 수 있는지 여부를 결정하는 주요 요인은 해당 플랫폼에 IdenTrust의 DST Root X3 인증서가 트러스트 스토어에 포함되어 있는지 여부입니다. 두 번째 요소는 해당 플랫폼이 현대적인 [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) 인증서를 지원하는지 여부입니다. 모든 Let's Encrypt 인증서가 SHA-2를 사용하기 때문입니다.
 
-If your certificate validates on some of the "Known Compatible" platforms but not others, the problem may be a web server misconfiguration, most likely failure to provide the correct certificate chain. Test your site with [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). If that doesn't identify the problem, ask for help in our [Community Forums](https://community.letsencrypt.org/).
+인증서가 아래 "알려진 호환성" 플랫폼 중 일부에 유효성을 검사하지만 다른 인증서는 유효하지 않은 경우, 문제는 웹 서버 구성 오류일 수 있으며 대부분 올바른 인증서 체인을 제공하지 못하게 됩니다. [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/)를 사용하여 사이트를 테스트하십시오. 그래도 문제가 확인되지 않으면 [커뮤니티 포럼](https://community.letsencrypt.org/)에 도움을 요청하십시오.
 
-You may want to visit [this particular community forum discussion](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) for more information about compatibility.
+호환성에 대한 자세한 내용은 [이 커뮤니티 포럼 토론방](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/)을 방문하십시오.
 
-# Known Compatible
+# 알려진 호환성 플랫폼
 
 * Mozilla Firefox >= v2.0
 * Google Chrome
@@ -35,7 +35,7 @@ You may want to visit [this particular community forum discussion](https://commu
 * Blackberry >= 10.3.3
 * PS4 game console with firmware >= 5.00
 
-# Known Incompatible
+# 알려진 비호환성 플랫폼
 
 * Blackberry < v10.3.3
 * Android < v2.3.6
