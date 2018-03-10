@@ -25,7 +25,7 @@ aliases: [/certs]
 
 IdenTrust는 중간 인증서에 교차 서명했습니다. 이렇게 하면 저희가 고유 root를 전파하는 동안 모든 주요 브라우저가 최종 인증서를 수락할 수 있습니다.
 
-정상적인 상황에서 Let's Encrypt가 발행한 인증서는 "Let's Encrypt Authority X3"에서 가져옵니다. 다른 중간 인증서인 "Let's Encrypt Authority X4"는 재해 복구용으로 예약되었으며 "Let's Encrypt Authority X3"으로 발급 할 수 있는 능력을 잃어버리면 사용됩니다. X1과 X2 중간 인증서는 1세대 중간 인증서였습니다. 저희는 이를 Windows XP와 더 호환되는 새로운 중간 인증서로 대체했습니다.
+정상적인 상황에서 Let's Encrypt가 발행한 인증서는 "Let's Encrypt Authority X3"에서 가져옵니다. 다른 중간 인증서인 "Let's Encrypt Authority X4"는 재해 복구용으로 예약되었으며 "Let's Encrypt Authority X3"으로 발급 할 수 있는 능력을 잃어버리면 사용됩니다. X1과 X2 중간 인증서는 1세대 중간 인증서였습니다. 저희는 이를 윈도우 XP와 더 호환되는 새로운 중간 인증서로 대체했습니다.
 
 * 활성
   * [Let's Encrypt Authority X3 (IdenTrust에 의해 교차 서명)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
