@@ -1,6 +1,8 @@
 # Let's Encrypt Website Translation (KOR)
 
-현재 [SecurityPlus](http://cafe.naver.com/securityplus)에서 주관하여 진행 중인 [Let's Encrypt](https://letsencrypt.org/) 웹사이트 번역 프로젝트 디렉토리입니다. 제가 맡은 부분은 다음과 같습니다.
+현재 [SecurityPlus](http://cafe.naver.com/securityplus)에서 주관하여 진행 중인 [Let's Encrypt](https://letsencrypt.org/) 웹사이트 번역 프로젝트 디렉토리입니다.
+
+제가 맡은 부분은 다음과 같습니다.
 
 `/content/`
 - [certificates](https://letsencrypt.org/certificates/)
