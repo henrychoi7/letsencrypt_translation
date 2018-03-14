@@ -12,7 +12,7 @@ lastmod: 2017-06-08
 
 Let's Encrypt 인증서를 취소하면 Let's Encrypt는 [OCSP (온라인 인증서 상태 프로토콜)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)를 통해 해당 해지 정보를 게시하고, 일부 브라우저는 OCSP에서 인증서를 신뢰해야 하는지 여부를 확인합니다. OCSP에는 [근본적인 문제가 있으므로](https://www.imperialviolet.org/2011/03/18/revocation.html) 모든 브라우저가 이 검사를 수행하지는 않습니다. 그러나 손상된 개인 키에 대응하는 인증서를 해지하는 것은 중요한 실천이며 Let's Encrypt의 [구독자 계약](https://letsencrypt.org/repository/)에 따라 필요합니다.
 
-Let's Encrypt로 인증서를 취소하려면 대부분 [Certbot](https://certbot.eff.org/)과 같은 ACME 클라이언트를 통해 [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)를 사용하게 됩니다. 당신에게 인증서를 철회할 수있는 권한이 있음을 Let's Encrypt에 증명해야 합니다. 이 작업에는 세 가지 방법이 있습니다.
+Let's Encrypt로 인증서를 취소하려면 대부분 [Certbot](https://certbot.eff.org/)과 같은 ACME 클라이언트를 통해 [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)를 사용하게 됩니다. 귀하에게 인증서를 철회할 수있는 권한이 있음을 Let's Encrypt에 증명해야 합니다. 이 작업에는 세 가지 방법이 있습니다.
 
 # 인증서를 발급한 계정에서 하는 경우
 
@@ -36,7 +36,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 
 # 승인된 다른 계정을 사용하는 경우
 
-호스트 또는 DNS를 손상시킨 후 누군가가 인증서를 발급한 경우, 다시 제어권을 얻었을 때 해당 인증서를 해지하고 싶을 것입니다. 인증서 해지를 위해 Let's Encrypt는 당신이 인증서의 도메인 이름을 제어하고 있다는 것을 확인해야 합니다 (그렇지 않으면 사람이 서로의 인증서를 허가없이 취소할 수 있습니다)! 이 제어권의 유효성을 검사하기 위해 Let's Encrypt는 인증서를 발급하는 데 사용하는 것과 동일한 메서드를 사용합니다. [DNS TXT 레코드에 값](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5)을 넣거나, [HTTP 서버에 파일](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3)을 저장하거나, [특수한 TLS 인증서](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4)를 제공할 수 있습니다. 일반적으로 ACME 클라이언트가 이를 처리합니다. 대부분의 ACME 클라이언트는 유효성 검사와 발급을 합치므로, 유효성 검사를 요청하는 유일한 방법은 발급을 시도하는 것입니다. 그런 다음 원하지 않는 인증서를 취소하거나, 단순히 개인 키를 삭제할 수 있습니다. 인증서를 아예 발행하지 않으려면, 명령줄에 존재하지 않는 도메인 이름을 포함시키면 됩니다. 이는 다른 기존 도메인 이름의 유효성을 검사하는 동안 인증서 발급에 실패하게 만듭니다. 이렇게 하려면 다음을 실행하십시오.
+호스트 또는 DNS를 손상시킨 후 누군가가 인증서를 발급한 경우, 다시 제어권을 얻었을 때 해당 인증서를 해지하고 싶을 것입니다. 인증서 해지를 위해 Let's Encrypt는 귀하가 인증서의 도메인 이름을 제어하고 있다는 것을 확인해야 합니다 (그렇지 않으면 사람이 서로의 인증서를 허가없이 취소할 수 있습니다)! 이 제어권의 유효성을 검사하기 위해 Let's Encrypt는 인증서를 발급하는 데 사용하는 것과 동일한 메서드를 사용합니다. [DNS TXT 레코드에 값](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5)을 넣거나, [HTTP 서버에 파일](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3)을 저장하거나, [특수한 TLS 인증서](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4)를 제공할 수 있습니다. 일반적으로 ACME 클라이언트가 이를 처리합니다. 대부분의 ACME 클라이언트는 유효성 검사와 발급을 합치므로, 유효성 검사를 요청하는 유일한 방법은 발급을 시도하는 것입니다. 그런 다음 원하지 않는 인증서를 취소하거나, 단순히 개인 키를 삭제할 수 있습니다. 인증서를 아예 발행하지 않으려면, 명령줄에 존재하지 않는 도메인 이름을 포함시키면 됩니다. 이는 다른 기존 도메인 이름의 유효성을 검사하는 동안 인증서 발급에 실패하게 만듭니다. 이렇게 하려면 다음을 실행하십시오.
 
 ```
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
