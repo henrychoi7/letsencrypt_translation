@@ -17,3 +17,9 @@
 - [integration-guide](https://letsencrypt.org/docs/integration-guide/)
 - [revoking](https://letsencrypt.org/docs/revoking/)
 - [staging-environment](https://letsencrypt.org/docs/staging-environment/)
+
+`/i18n`
+- [ko.toml](https://letsencrypt.org/)
+
+`/`
+- [config.toml](https://letsencrypt.org/)
