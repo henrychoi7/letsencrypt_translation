@@ -1,5 +1,5 @@
 ---
-title: Revoking certificates
+title: 인증서 해지
 slug: revoking
 top_graphic: 1
 date: 2017-06-08

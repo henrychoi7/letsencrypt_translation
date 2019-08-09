@@ -2,6 +2,7 @@
 title: Chain of Trust
 slug: certificates
 top_graphic: 5
+lastmod: 2019-05-01
 aliases: [/certs]
 ---
 
@@ -61,7 +62,7 @@ IdenTrust는 중간 인증서에 교차 서명했습니다. 이렇게 하면 저
 
 # 인증서 투명성
 
-저희는 운영 방식 및 발행 인증서의 투명성에 전념합니다. 모든 인증서를 발행할 때 인증서 투명성 로그에 제출합니다. 다음 링크를 통해 발행 된 Let's Encrypt 인증서를 모두 볼 수 있습니다.
+저희는 운영 방식 및 발행 인증서의 투명성에 전념합니다. 모든 인증서를 발행할 때 [인증서 투명성 로그](https://www.certificate-transparency.org/)에 제출합니다. 다음 링크를 통해 발행 된 Let's Encrypt 인증서를 모두 볼 수 있습니다.
 
 * [Let's Encrypt Authority X1에 의해 발행](https://crt.sh/?Identity=%25&iCAID=7395)
 * [Let's Encrypt Authority X3에 의해 발행](https://crt.sh/?Identity=%25&iCAID=16418)
@@ -70,4 +71,4 @@ IdenTrust는 중간 인증서에 교차 서명했습니다. 이렇게 하면 저
 
 ISRG Root CA 및 Let's Encrypt 중간 CA의 개인 키는 도난당한 키에 대해 높은 수준의 보호 기능을 제공하는 하드웨어 보안 모듈 (HSM)에 저장됩니다.
 
-모든 ISRG 키는 현재 RSA 키입니다. 우리는 2018년 3월에 ECDSA 키를 생성 할 계획입니다.
+모든 ISRG 키는 현재 RSA 키입니다. 우리는 2018년 3월에 [ECDSA 키를 생성 할 계획]({{< ref "/upcoming-features.md" >}})입니다.

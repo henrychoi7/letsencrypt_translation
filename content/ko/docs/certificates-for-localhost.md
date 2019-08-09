@@ -1,5 +1,5 @@
 ---
-title: Certificates for localhost
+title: localhost를 위한 인증서
 permalink: /docs/certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21

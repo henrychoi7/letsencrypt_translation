@@ -1,9 +1,9 @@
 ---
-title: ACME Protocol Updates
+title: ACME 프로토콜 업데이트
 slug: acme-protocol-updates
 top_graphic: 1
 date: 2016-07-27
-lastmod: 2016-07-27
+lastmod: 2018-04-27
 ---
 
 {{< lastmod >}}
@@ -14,8 +14,17 @@ ACME 프로토콜은 Let's Encrypt가 작동하는 방식의 기초입니다. �
 
 저희는 다음과 같은 API 엔드포인트를 가지고 있습니다. 이들은 프로토콜 문서 초안과 함께 발전하면서 하나로 고정된 ACME 사양의 초안을 구현하는 것은 아닙니다. 현재 구현된 ACME 초안과 비교하기 위해 [각기 다른 문서](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)를 참조하십시오.
 
+## ACME v1
+
 * [제작] `https://acme-v01.api.letsencrypt.org/directory`
 * [준비] `https://acme-staging.api.letsencrypt.org/directory`
+
+## ACME v2
+
+* [제작] `https://acme-v02.api.letsencrypt.org/directory`
+* [준비] `https://acme-staging-v02.api.letsencrypt.org/directory`
+
+https://letsencrypt.org/2017/06/14/acme-v2-api.html
 
 # 새로운 하위 호환 ACME 기능
 
